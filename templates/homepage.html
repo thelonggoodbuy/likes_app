@@ -1,11 +1,11 @@
 
 
-<div class="card">
+<div>
     <h2>Пост</h2>
     <img src="{{url_for('static', filename="touch_of_evil.jpg")}}" height="377">
-    <form>
+    <form action="/" method="post">
         Введите имя:<br>
-        <input type="text"><br>
-        <input type="image" src="{{url_for('static', filename="like.png")}}" name="submit"><br>
+        <input type="text" name="name"><br>     
+        <p><input type="submit" value="Submit"></p>
     </form>
 </div>
